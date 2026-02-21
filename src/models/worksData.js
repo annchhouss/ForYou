@@ -1,357 +1,260 @@
+import { Navigation } from 'swiper/modules'
+
 export const worksHero = {
-  title: 'Наши работы',
-  description: 'Исследуйте наше портфолио – галерею визуально впечатляющих и продуманных до мелочей проектов.'
+    title: 'Наши работы',
+    description: 'Исследуйте наше портфолио – галерею визуально впечатляющих и продуманных до мелочей проектов.'
 }
 
 export const worksIntro = {
-  title: 'Для Тебя',
-  description: 'Здесь мы демонстрируем наш творческий подход и профессиональный опыт, превращая пространства в искусство – будь то уютный дом или грандиозное торжество. Каждый проект – это уникальная история, сотканная из стиля, эмоций и безупречного исполнения.',
-  subtitle: 'Несколько историй, воплощенных в ваших мероприятиях'
+    title: 'Для Тебя',
+    description: 'Здесь мы демонстрируем наш творческий подход и профессиональный опыт, превращая пространства в искусство – будь то уютный дом или грандиозное торжество. Каждый проект – это уникальная история, сотканная из стиля, эмоций и безупречного исполнения.',
+    subtitle: 'Несколько историй, воплощенных в ваших мероприятиях'
+}
+
+export const worksBannerBottom = {
+    title: 'Позвольте нам воплотить ваши идеи в атмосфере.',
+    description: 'Мы гарантируем безупречный результат — и в интерьере, и в декоре мероприятия. Слаженная работа нашей многопрофильной команды обеспечит целостное и яркое воплощение вашей идеи',
+    button: 'Начать проект'
 }
 
 export const worksCategories = [
-  { 
-    id: 'weddings', 
-    title: 'Свадьбы', 
-    slug: 'weddings',
-    description: 'Свадьба — это история, которая начинается с «да». Мы поможем вам рассказать её на языке цветов, фактур и безупречного вкуса. От первой встречи до финального тоста мы окружим вас красотой, которая создаёт настроение и остаётся на фотографиях навсегда.',
-    image: '/src/assets/images/main-banner.jpg',
-    mainTitle: 'Ваш день — в деталях мечты'
-  },
-  { 
-    id: 'corporate', 
-    title: 'Корпаративы', 
-    slug: 'corporate',
-    description: 'Корпоратив — это больше, чем встреча коллег. Это возможность сказать «спасибо», вдохновить на новые победы и создать ту самую атмосферу единства, которая остаётся в памяти команды. Мы превращаем бизнес-событие в гармоничное пространство, где деловой этикет встречается с душевным теплом.',
-    image: '/src/assets/images/main-banner.jpg',
-    mainTitle: 'Не просто мероприятие, а впечатление'
-  },
-  { 
-    id: 'birthdays', 
-    title: 'Дни рождения', 
-    slug: 'birthdays',
-    description: 'День рождения — это личный праздник, где каждая деталь говорит о виновнике торжества. Мы создаём не просто декор, а ту самую волшебную атмосферу, в которой загадываются самые заветные желания и рождаются самые тёплые воспоминания. Пусть в этот день всё будет идеально.',
-    image: '/src/assets/images/main-banner.jpg',
-    mainTitle: 'Год стал ярче — праздник должен быть прекраснее'
-  },
-  { 
-    id: 'servings', 
-    title: 'Сервировки', 
-    slug: 'servings',
-    description: 'Когда важна не масштабность, а глубина впечатлений. Для тех самых тёплых встреч, где ценен каждый гость и каждое слово. Мы верим, что магия — в деталях, а уют — в продуманности. Создаём камерное пространство, где обстановка говорит сама за себя: «Здесь вам рады».',
-    image: '/src/assets/images/main-banner.jpg',
-    mainTitle: 'Идеальная форма для вашего содержания'
-  }
+    {
+        id: 'weddings',
+        title: 'Свадьбы',
+        slug: 'weddings',
+        description: 'Ваш день — в деталях мечты <br />Свадьба — это история, которая начинается с «да». Мы поможем вам рассказать её на языке цветов, фактур и безупречного вкуса. От первой встречи до финального тоста мы окружим вас красотой, которая создаёт настроение и остаётся на фотографиях навсегда.',
+        image: '/src/assets/images/events/weddings/banner.png',
+        buttonText: 'Перейти'
+    },
+    {
+        id: 'corporate',
+        title: 'Корпоративы',
+        slug: 'corporate',
+        description: 'Не просто мероприятие, а впечатление <br />Корпоратив — это больше, чем встреча коллег. Это возможность сказать «спасибо», вдохновить на новые победы и создать ту самую атмосферу единства, которая остаётся в памяти команды. Мы превращаем бизнес-событие в гармоничное пространство, где деловой этикет встречается с душевным теплом.',
+        image: '/src/assets/images/events/corporate/banner.png',
+        buttonText: 'Перейти'
+    },
+    {
+        id: 'birthdays',
+        title: 'Дни рождения',
+        slug: 'birthdays',
+        description: 'Год стал ярче — праздник должен быть прекраснее <br />День рождения — это личный праздник, где каждая деталь говорит о виновнике торжества. Мы создаём не просто декор, а ту самую волшебную атмосферу, в которой загадываются самые заветные желания и рождаются самые тёплые воспоминания. Пусть в этот день всё будет идеально.',
+        image: '/src/assets/images/events/birthdays/banner.png',
+        buttonText: 'Перейти'
+    },
+    {
+        id: 'servings',
+        title: 'Сервировки',
+        slug: 'servings',
+        description: 'Идеальная форма для вашего содержания <br />Когда важна не масштабность, а глубина впечатлений. Для тех самых тёплых встреч, где ценен каждый гость и каждое слово. Мы верим, что магия — в деталях, а уют — в продуманности. Создаём камерное пространство, где обстановка говорит сама за себя: «Здесь вам рады».',
+        image: '/src/assets/images/events/servings/banner.png',
+        buttonText: 'Перейти'
+    },
 ]
 
-/**
- * ШАБЛОН ДЛЯ ДОБАВЛЕНИЯ НОВОЙ РАБОТЫ:
- * 
- * Просто скопируйте объект ниже и заполните своими данными:
- * 
- * {
- *   id: 9, // следующий номер по порядку
- *   title: 'Название проекта',
- *   description: 'Краткое описание проекта (отображается в списке)',
- *   category: 'websites', // или 'branding', 'design', 'apps'
- *   slug: 'unique-slug-name', // уникальный URL (латиница, дефисы)
- *   image: '/src/assets/images/main-banner.jpg', // главное изображение
- *   images: [ // массив дополнительных изображений для галереи
- *     '/src/assets/images/main-banner.jpg',
- *     '/src/assets/images/main-banner.jpg',
- *     '/src/assets/images/main-banner.jpg'
- *   ],
- *   tags: ['Тег 1', 'Тег 2', 'Тег 3'], // теги проекта
- *   year: 2024, // год реализации
- *   client: 'Имя клиента',
- *   area: '120 м²', // площадь (опционально)
- *   duration: '4 месяца', // срок реализации (опционально)
- *   budget: '3.5 млн руб.', // бюджет (опционально)
- *   fullDescription: 'Полное описание проекта...', // подробное описание
- *   features: [ // список особенностей проекта
- *     'Особенность 1',
- *     'Особенность 2',
- *     'Особенность 3'
- *   ],
- *   challenges: 'Описание задачи/вызова проекта', // опционально
- *   solution: 'Описание решения', // опционально
- *   link: '/works/9' // ссылка на детальную страницу (должна совпадать со slug)
- * }
- */
+export const categoryDetails = {
+    weddings: {
+        bannerImage: '/src/assets/images/events/weddings/category-banner.png',
+        title: 'Свадьбы',
+        description: 'Примеры наших свадебных работ',
+        gallery: [
+            '/src/assets/images/events/weddings/category/1.png',
+            '/src/assets/images/events/weddings/category/2.png',
+            '/src/assets/images/events/weddings/category/3.png',
+            '/src/assets/images/events/weddings/category/4.png',
+            '/src/assets/images/events/weddings/category/5.png',
+            '/src/assets/images/events/weddings/category/6.png',
+        ],
+        categoryIntro: {
+            title: 'Наш подход',
+            description: 'Мы выбираем подходящий вид декора специально для вас!',
+            subtitle: 'Ниже предоставлены стили , которые мы можем реализовать'
+        }
+    },
+    corporate: {
+        bannerImage: '/src/assets/images/categories/corporate-banner.jpg',
+        title: 'Корпоративы',
+        description: 'Примеры наших корпоративных работ.',
+        gallery: [
+            '/src/assets/images/categories/corporate-gallery-1.jpg',
+            '/src/assets/images/categories/corporate-gallery-2.jpg',
+            '/src/assets/images/categories/corporate-gallery-3.jpg'
+        ],
+        categoryIntro: {
+            title: 'Наш подход',
+            description: 'Мы выбираем подходящий вид декора специально для вас!',
+            subtitle: 'Ниже предоставлены стили , которые мы можем реализовать'
+        }
+    },
+    birthdays: {
+        bannerImage: '/src/assets/images/categories/birthdays-banner.jpg',
+        title: 'Дни рождения',
+        description: 'Примеры наших работ на дни рождения.',
+        gallery: [
+            '/src/assets/images/categories/birthday-gallery-1.jpg',
+            '/src/assets/images/categories/birthday-gallery-2.jpg',
+            '/src/assets/images/categories/birthday-gallery-3.jpg'
+        ],
+        categoryIntro: {
+            title: 'Наш подход',
+            description: 'Мы выбираем подходящий вид декора специально для вас!',
+            subtitle: 'Ниже предоставлены стили , которые мы можем реализовать'
+        }
+    },
+    servings: {
+        bannerImage: '/src/assets/images/categories/servings-banner.jpg',
+        title: 'Сервировки',
+        description: 'Примеры наших работ сервировки.',
+        gallery: [
+            '/src/assets/images/categories/serving-gallery-1.jpg',
+            '/src/assets/images/categories/serving-gallery-2.jpg',
+            '/src/assets/images/categories/serving-gallery-3.jpg'
+        ],
+        categoryIntro: {
+            title: 'Наш подход',
+            description: 'Мы выбираем подходящий вид декора специально для вас!',
+            subtitle: 'Ниже предоставлены стили , которые мы можем реализовать'
+        }
+    }
+}
 
-// Примеры работ для каждой категории
 export const works = [
-  {
-    id: 1,
-    title: 'Код Сердца',
-    description: 'Романтическая свадьба в красных тонах с акцентом на детали',
-    category: 'weddings',
-    slug: 'kod-serdtsa',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Свадьба', 'Романтика', 'Красный'],
-    year: 2024,
-    client: 'Молодая пара',
-    fullDescription: 'Романтическая свадьба в стиле "Код Сердца" с акцентом на красные тона, романтические детали и создание особой атмосферы любви.',
-    styles: [
-      {
+    {
         id: 1,
         title: 'Код Сердца',
-        subtitle: '',
-        image: '/src/assets/images/main-banner.jpg',
-        images: ['/src/assets/images/main-banner.jpg', '/src/assets/images/main-banner.jpg']
-      },
-      {
+        shortDescription: 'Любовь - это то чувство, которое возникает неожиданно, оно как будто появляется из ниоткуда.',
+        category: 'weddings',
+        slug: 'kod-serdtsa',
+        bannerImage: '/src/assets/images/events/weddings/kod-serdtsa/banner.jpg',
+        bannerBottomMedia: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.mp4',
+        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        images: [
+            '/src/assets/images/events/weddings/kod-serdtsa/7.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/1.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/2.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/3.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/4.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/6.png'
+        ],
+        fullDescription: 'Название свадьбы было придумано не просто так, ребята познакомились и стали переписываться. Вова отправил ссылку на сайт «100 вопросов, чтобы влюбиться», ребята каждый день отвечали по одному вопросу, и любовь случилась',
+    },
+    {
         id: 2,
-        title: 'Казаки',
-        subtitle: 'Любовь бескрайняя как степь',
-        image: '/src/assets/images/main-banner.jpg',
-        images: ['/src/assets/images/main-banner.jpg', '/src/assets/images/main-banner.jpg']
-      },
-      {
+        title: 'Код Сердца',
+        shortDescription: 'Любовь - это то чувство, которое возникает неожиданно, оно как будто появляется из ниоткуда.',
+        category: 'weddings',
+        slug: 'kod-serdtsa',
+        bannerImage: '/src/assets/images/events/weddings/kod-serdtsa/banner.jpg',
+        bannerBottomMedia: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.mp4',
+        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        images: [
+            '/src/assets/images/events/weddings/kod-serdtsa/7.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/1.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/2.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/3.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/4.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/6.png'
+        ],
+        fullDescription: 'Название свадьбы было придумано не просто так, ребята познакомились и стали переписываться. Вова отправил ссылку на сайт «100 вопросов, чтобы влюбиться», ребята каждый день отвечали по одному вопросу, и любовь случилась',
+    },
+    {
         id: 3,
-        title: 'Все просто',
-        subtitle: '',
-        image: '/src/assets/images/main-banner.jpg',
-        images: ['/src/assets/images/main-banner.jpg', '/src/assets/images/main-banner.jpg']
-      }
-    ],
-    link: '/works/kod-serdtsa'
-  },
-  {
-    id: 2,
-    title: 'Загородный дом в классическом стиле',
-    description: 'Дизайн и реализация интерьера загородного дома площадью 250 м² в классическом стиле',
-    category: 'branding',
-    slug: 'country-house-classic',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Классический стиль', 'Загородный дом', 'Премиум'],
-    year: 2024,
-    client: 'Частный клиент',
-    area: '250 м²',
-    duration: '8 месяцев',
-    budget: '8.5 млн руб.',
-    fullDescription: 'Проект включал создание роскошного интерьера загородного дома в классическом стиле. Были спроектированы все помещения: гостиная, столовая, кабинет, спальни, детские комнаты, кухня и зона отдыха.',
-    features: [
-      'Полный дизайн-проект',
-      '3D-визуализация всех помещений',
-      'Рабочие чертежи',
-      'Подбор эксклюзивных материалов',
-      'Авторский надзор',
-      'Координация всех работ'
-    ],
-    challenges: 'Необходимо было создать роскошный интерьер, сохраняя при этом уют и функциональность для семьи с детьми.',
-    solution: 'Мы использовали классические элементы декора, качественные натуральные материалы и продуманное зонирование пространства для разных возрастных групп.',
-    link: '/works/2'
-  },
-  {
-    id: 3,
-    title: 'Лофт-квартира в стиле индастриал',
-    description: 'Превращение обычной квартиры в стильный лофт с индустриальными элементами',
-    category: 'design',
-    slug: 'loft-apartment-industrial',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Лофт', 'Индастриал', 'Перепланировка'],
-    year: 2023,
-    client: 'Молодая пара',
-    area: '85 м²',
-    duration: '3 месяца',
-    budget: '2.2 млн руб.',
-    fullDescription: 'Проект включал демонтаж перегородок, создание открытого пространства, установку индустриальных элементов декора и подбор соответствующей мебели.',
-    features: [
-      'Демонтаж перегородок',
-      'Открытое планировочное решение',
-      'Индустриальный стиль',
-      'Кастомная мебель',
-      'Авторский надзор'
-    ],
-    challenges: 'Создать стильный лофт в обычной квартире, сохранив при этом функциональность и комфорт.',
-    solution: 'Мы использовали открытую планировку, индустриальные материалы (кирпич, металл, бетон) и продуманное зонирование с помощью мебели и освещения.',
-    link: '/works/3'
-  },
-  {
-    id: 4,
-    title: 'Скандинавская квартира-студия',
-    description: 'Дизайн и реализация уютной квартиры-студии в скандинавском стиле',
-    category: 'websites',
-    slug: 'scandinavian-studio',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Скандинавский', 'Студия', 'Минимализм'],
-    year: 2024,
-    client: 'Молодой специалист',
-    area: '45 м²',
-    duration: '2 месяца',
-    budget: '1.2 млн руб.',
-    fullDescription: 'Проект небольшой квартиры-студии в скандинавском стиле с акцентом на функциональность и уют. Было создано продуманное зонирование пространства.',
-    features: [
-      'Оптимизация пространства',
-      'Скандинавский стиль',
-      'Функциональная мебель',
-      'Светлое оформление',
-      'Авторский надзор'
-    ],
-    challenges: 'Максимально эффективно использовать небольшое пространство, создав при этом уютный и стильный интерьер.',
-    solution: 'Мы использовали многофункциональную мебель, светлые тона, продуманное хранение и зонирование с помощью перегородок и освещения.',
-    link: '/works/4'
-  },
-  {
-    id: 5,
-    title: 'Пентхаус с панорамными окнами',
-    description: 'Роскошный пентхаус с видом на город в современном стиле',
-    category: 'branding',
-    slug: 'penthouse-panoramic',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Пентхаус', 'Премиум', 'Современный'],
-    year: 2024,
-    client: 'Бизнесмен',
-    area: '180 м²',
-    duration: '6 месяцев',
-    budget: '12 млн руб.',
-    fullDescription: 'Проект роскошного пентхауса с панорамными окнами. Интерьер выполнен в современном стиле с использованием премиальных материалов и эксклюзивной мебели.',
-    features: [
-      'Премиум материалы',
-      'Эксклюзивная мебель',
-      'Панорамные окна',
-      'Умный дом',
-      'Полный дизайн-проект',
-      'Авторский надзор'
-    ],
-    challenges: 'Создать роскошный интерьер, который подчеркнет панорамные виды и будет соответствовать высокому статусу владельца.',
-    solution: 'Мы использовали минималистичный современный стиль, премиальные материалы, эксклюзивную мебель и продуманное освещение, которое подчеркивает виды из окон.',
-    link: '/works/5'
-  },
-  {
-    id: 6,
-    title: 'Семейный дом в эко-стиле',
-    description: 'Экологичный дизайн загородного дома для большой семьи',
-    category: 'design',
-    slug: 'eco-family-house',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Эко-стиль', 'Семейный', 'Загородный'],
-    year: 2023,
-    client: 'Семья с детьми',
-    area: '200 м²',
-    duration: '7 месяцев',
-    budget: '6.5 млн руб.',
-    fullDescription: 'Проект экологичного интерьера загородного дома для большой семьи. Использованы натуральные материалы, безопасные для детей и окружающей среды.',
-    features: [
-      'Экологичные материалы',
-      'Безопасность для детей',
-      'Функциональные зоны',
-      'Натуральные текстуры',
-      'Авторский надзор'
-    ],
-    challenges: 'Создать экологичный интерьер, который будет безопасным для детей, функциональным для большой семьи и при этом стильным.',
-    solution: 'Мы использовали натуральные материалы (дерево, камень, натуральные ткани), безопасную мебель, продуманное зонирование и много места для хранения.',
-    link: '/works/6'
-  },
-  {
-    id: 7,
-    title: 'Минималистичная квартира',
-    description: 'Чистый минимализм в городской квартире',
-    category: 'websites',
-    slug: 'minimalist-apartment',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Минимализм', 'Современный', 'Городская'],
-    year: 2023,
-    client: 'Дизайнер',
-    area: '65 м²',
-    duration: '2.5 месяца',
-    budget: '1.8 млн руб.',
-    fullDescription: 'Проект минималистичной квартиры с акцентом на чистые линии, функциональность и качественные материалы.',
-    features: [
-      'Минималистичный стиль',
-      'Качественные материалы',
-      'Функциональная планировка',
-      'Скрытое хранение',
-      'Авторский надзор'
-    ],
-    challenges: 'Создать минималистичный интерьер без ощущения пустоты, сохранив при этом функциональность и уют.',
-    solution: 'Мы использовали качественные материалы, продуманное освещение, скрытое хранение и акцентные элементы, которые добавляют характер пространству.',
-    link: '/works/7'
-  },
-  {
-    id: 8,
-    title: 'Квартира в стиле ар-деко',
-    description: 'Роскошный интерьер в стиле ар-деко с современными элементами',
-    category: 'branding',
-    slug: 'art-deco-apartment',
-    image: '/src/assets/images/main-banner.jpg',
-    images: [
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg',
-      '/src/assets/images/main-banner.jpg'
-    ],
-    tags: ['Ар-деко', 'Роскошь', 'Премиум'],
-    year: 2024,
-    client: 'Частный клиент',
-    area: '140 м²',
-    duration: '5 месяцев',
-    budget: '7.5 млн руб.',
-    fullDescription: 'Проект роскошной квартиры в стиле ар-деко с современной интерпретацией. Использованы дорогие материалы, эксклюзивная мебель и декоративные элементы.',
-    features: [
-      'Стиль ар-деко',
-      'Премиум материалы',
-      'Эксклюзивная мебель',
-      'Декоративные элементы',
-      'Полный дизайн-проект',
-      'Авторский надзор'
-    ],
-    challenges: 'Создать роскошный интерьер в стиле ар-деко, адаптированный под современный образ жизни.',
-    solution: 'Мы использовали классические элементы ар-деко (геометрия, роскошные материалы, декоративные детали) в сочетании с современной функциональностью и технологиями.',
-    link: '/works/8'
-  }
+        title: 'Код Сердца',
+        shortDescription: 'Любовь - это то чувство, которое возникает неожиданно, оно как будто появляется из ниоткуда.',
+        category: 'weddings',
+        slug: 'kod-serdtsa',
+        bannerImage: '/src/assets/images/events/weddings/kod-serdtsa/banner.jpg',
+        bannerBottomMedia: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.mp4',
+        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        images: [
+            '/src/assets/images/events/weddings/kod-serdtsa/7.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/1.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/2.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/3.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/4.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/6.png'
+        ],
+        fullDescription: 'Название свадьбы было придумано не просто так, ребята познакомились и стали переписываться. Вова отправил ссылку на сайт «100 вопросов, чтобы влюбиться», ребята каждый день отвечали по одному вопросу, и любовь случилась',
+    },
+    {
+        id: 3,
+        title: 'Код Сердца',
+        shortDescription: 'Любовь - это то чувство, которое возникает неожиданно, оно как будто появляется из ниоткуда.',
+        category: 'weddings',
+        slug: 'kod-serdtsa',
+        bannerImage: '/src/assets/images/events/weddings/kod-serdtsa/banner.jpg',
+        bannerBottomMedia: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.mp4',
+        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        images: [
+            '/src/assets/images/events/weddings/kod-serdtsa/7.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/1.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/2.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/3.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/4.png',
+            '/src/assets/images/events/weddings/kod-serdtsa/6.png'
+        ],
+        fullDescription: 'Название свадьбы было придумано не просто так, ребята познакомились и стали переписываться. Вова отправил ссылку на сайт «100 вопросов, чтобы влюбиться», ребята каждый день отвечали по одному вопросу, и любовь случилась',
+    },
 ]
 
-// Функция для получения работы по slug
+export const mainSwiperOptions = {
+    modules: [Navigation],
+    slidesPerView: 3,
+    spaceBetween: 50,
+    loop: true,
+    navigation: {
+        nextEl: '.works-slider__btn--next',
+        prevEl: '.works-slider__btn--prev'
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        }
+    }
+}
+
+export const workSwiperOptions = (workId, images) => {
+    const hasMultipleImages = images.length > 1;
+
+    return {
+        modules: [Navigation],
+        navigation: {
+            nextEl: `.next-${workId}`,
+            prevEl: `.prev-${workId}`,
+        },
+        slidesPerView: 1,
+        loop: hasMultipleImages,
+        autoplay: hasMultipleImages
+            ? { delay: 3000, disableOnInteraction: false }
+            : false,
+    };
+};
+
+export const getWorksByCategory = (categorySlug) => {
+    return works.filter(work => work.category === categorySlug)
+}
+
 export const getWorkBySlug = (slug) => {
-  return works.find(work => work.slug === slug)
+    return works.find(work => work.slug === slug)
 }
 
-// Функция для получения работы по id
 export const getWorkById = (id) => {
-  return works.find(work => work.id === id)
+    return works.find(work => work.id === id)
 }
 
-export const worksStats = {
-  total: 150,
-  clients: 80,
-  awards: 12,
-  experience: 5
+export const getCategoryBySlug = (categorySlug) => {
+    return worksCategories.find(cat => cat.slug === categorySlug)
+}
+
+export const getCategoryDetails = (categorySlug) => {
+    return categoryDetails[categorySlug] || null
 }
