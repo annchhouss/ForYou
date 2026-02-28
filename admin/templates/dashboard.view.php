@@ -14,7 +14,7 @@
         <header class="dashboard__header">
             <h1 class="dashboard__title">
                 <span class="dashboard__icon">📋</span>
-                Заявки с форм
+                Заявки
             </h1>
             <a href="?logout=1" class="dashboard__logout">Выйти</a>
         </header>
@@ -48,7 +48,6 @@
                 <div class="empty-state">
                     <span class="empty-state__icon">📭</span>
                     <h2 class="empty-state__title">Пока нет заявок</h2>
-                    <p class="empty-state__text">Заявки будут появляться здесь, когда пользователи заполнят формы</p>
                 </div>
             <?php else: ?>
                 <?php foreach ($filteredSubmissions as $sub): ?>
@@ -63,7 +62,6 @@
                                 <span class="submission-card__date"><?= $sub['timestamp'] ?></span>
                             </div>
                             <div class="submission-card__actions">
-                                <button class="btn btn--view">Просмотр</button>
                                 <form method="POST" style="display:inline;" onsubmit="return confirm('Удалить заявку?')">
                                     <input type="hidden" name="delete" value="<?= $sub['id'] ?>">
                                     <button type="submit" class="btn btn--delete">Удалить</button>

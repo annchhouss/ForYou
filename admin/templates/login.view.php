@@ -14,8 +14,6 @@
         <div class="login-card">
             <div class="login-card__header">
                 <span class="login-card__icon">🔐</span>
-                <h1 class="login-card__title">Админка</h1>
-                <p class="login-card__subtitle">Введите пароль для доступа к заявкам</p>
             </div>
             <?php if (isset($error)): ?>
                 <div class="login-error"><?= htmlspecialchars($error) ?></div>
