@@ -116,7 +116,6 @@
             <?php endif; ?>
         </main>
     </div>
-
     <script>
         function toggleDetails(id) {
             const details = document.getElementById(id);

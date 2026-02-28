@@ -17,11 +17,9 @@
                 <h1 class="login-card__title">Админка</h1>
                 <p class="login-card__subtitle">Введите пароль для доступа к заявкам</p>
             </div>
-
             <?php if (isset($error)): ?>
                 <div class="login-error"><?= htmlspecialchars($error) ?></div>
             <?php endif; ?>
-
             <form method="POST" class="login-form">
                 <div class="login-form__group">
                     <input 
