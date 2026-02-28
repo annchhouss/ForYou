@@ -170,11 +170,6 @@ h3 { font-size: 20px; }
     white-space: nowrap;
 }
 
-.dashboard__logout:hover {
-    border-color: #ef4444;
-    color: #ef4444;
-}
-
 .dashboard__stats {
     padding: 24px;
     display: grid;
@@ -190,12 +185,6 @@ h3 { font-size: 20px; }
     transition: all 0.3s ease;
 }
 
-.stat-card:hover {
-    border-color: #D8FF99;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(216, 255, 153, 0.1);
-}
-
 .stat-card__label {
     font-size: 13px;
     color: #9ca3af;
@@ -208,14 +197,6 @@ h3 { font-size: 20px; }
     font-size: 36px;
     font-weight: 700;
     color: #ffffff;
-}
-
-.stat-card--form .stat-card__value {
-    color: #667eea;
-}
-
-.stat-card--modal .stat-card__value {
-    color: #a855f7;
 }
 
 .dashboard__filters {

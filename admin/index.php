@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$ADMIN_PASSWORD = 'admin123';
+$ADMIN_PASSWORD = 'admin';
 
 $eventTypeLabels = [
     'wedding' => 'Свадьба',

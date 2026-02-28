@@ -132,10 +132,10 @@ php -S localhost:8000
 
 ## 🔐 Админ-панель
 
-**URL:** `http://localhost:3000/admin/index.php` (через Vite proxy)  
-**Или:** `http://localhost:8000/admin/index.php` (напрямую)
+**URL:** `http://localhost:3000/admin/index.php`
+**Или:** `http://localhost:8000/admin/index.php`
 
-Пароль по умолчанию: **`admin123`**
+Пароль по умолчанию: **`admin`**
 
 ### Layout компоненты
 
