@@ -48,14 +48,59 @@ function ensureMinLessThanMax(changedIndex) {
     }
 }
 
-const handleSubmit = () => {
-    emit('submit', { ...form.value })
+const isLoading = ref(false)
+const submitError = ref('')
+const submitSuccess = ref(false)
+
+const handleSubmit = async () => {
+    isLoading.value = true
+    submitError.value = ''
+    submitSuccess.value = false
+    
+    try {
+        const response = await fetch('/api/submit.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                ...form.value,
+                formType: 'contactForm'
+            })
+        })
+        
+        const result = await response.json()
+        
+        if (result.success) {
+            submitSuccess.value = true
+            form.value = {
+                name: '',
+                email: '',
+                eventType: [],
+                budget: props.initialBudget,
+                message: ''
+            }
+            emit('submit', { success: true })
+        } else {
+            submitError.value = result.message || 'Ошибка при отправке'
+        }
+    } catch (error) {
+        submitError.value = 'Ошибка сети: ' + error.message
+    } finally {
+        isLoading.value = false
+    }
 }
 </script>
 
 <template>
     <section class="contact-form-section">
         <div class="container">
+            <div v-if="submitSuccess" class="success-message">
+                ✓ Заявка успешно отправлена!
+            </div>
+            <div v-if="submitError" class="error-message">
+                {{ submitError }}
+            </div>
             <form
                 class="contact-form"
                 @submit.prevent="handleSubmit"
@@ -172,8 +217,9 @@ const handleSubmit = () => {
                     variant="primary"
                     size="large"
                     class="submit-button"
+                    :disabled="isLoading"
                 >
-                    Отправить
+                    {{ isLoading ? 'Отправка...' : 'Отправить' }}
                 </AppButton>
             </form>
         </div>
