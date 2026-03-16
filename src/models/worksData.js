@@ -119,6 +119,7 @@ export const categoryDetails = {
 }
 
 export const works = [
+    //weddings
     {
         id: 1,
         title: 'Код Сердца',
@@ -202,7 +203,214 @@ export const works = [
             '/src/assets/images/events/weddings/vse-prosto/vse-prosto-9.jpg'
         ],
         fullDescription: 'В истории Андрея и Анны на первый взгляд все просто. Они просто познакомились, просто свидание, и вот он ПРОСТО едет за ней в другой город. Скалывается впечатление, что все у пары все просто, но это не совсем так. За их историей скрывается глубина, которую мы хотели подчеркнуть концепцией «просто о сложном».',
-    }
+    },
+    // corporate
+    {
+        id: 5,
+        title: 'ECOS | вода вне времени',
+        shortDescription: '35 лет компании ECOS. Вода вне времени',
+        category: 'corporate',
+        slug: 'ecos',
+        bannerImage: '/src/assets/images/events/corporate/ecos/ecos-6.jpg',
+        bannerBottomMedia: '/src/assets/images/events/corporate/ecos/ecos.mp4',
+        bannerBottomImage: '/src/assets/images/events/corporate/ecos/banner-bottom.jpg',
+        images: [
+            '/src/assets/images/events/corporate/ecos/ecos-1.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-2.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-3.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-4.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-5.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-6.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-7.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-8.jpg',
+            '/src/assets/images/events/corporate/ecos/ecos-9.jpg'
+        ],
+        fullDescription: 'Деятельность компании непосредственно связана с водой, поэтому мы сделали необычные гостевые композиции со льдом и живыми цветами. Получилось очень стильно',
+    },
+    {
+        id: 6,
+        title: 'Цирк "Новый год"',
+        shortDescription: 'Корпоративы ',
+        category: 'corporate',
+        slug: 'circus',
+        bannerImage: '/src/assets/images/events/corporate/circus/circus-5.jpg',
+        bannerBottomMedia: '/src/assets/images/events/corporate/circus/circus-banner-bottom.mp4',
+        bannerBottomImage: '/src/assets/images/events/corporate/circus/circus-1.jpg',
+        images: [
+            '/src/assets/images/events/corporate/circus/circus-1.jpg',
+            '/src/assets/images/events/corporate/circus/circus-2.jpg',
+            '/src/assets/images/events/corporate/circus/circus-3.jpg',
+            '/src/assets/images/events/corporate/circus/circus-4.jpg',
+            '/src/assets/images/events/corporate/circus/circus-5.jpg',
+            '/src/assets/images/events/corporate/circus/circus-6.jpg',
+            '/src/assets/images/events/corporate/circus/circus-7.jpg',
+            '/src/assets/images/events/corporate/circus/circus-8.jpg',
+            '/src/assets/images/events/corporate/circus/circus-9.jpg'
+        ],
+        fullDescription: '',
+    },
+    {
+        id: 7,
+        title: 'NAIS',
+        shortDescription: '«Миссия выполнима».',
+        category: 'corporate',
+        slug: 'nais',
+        bannerImage: '/src/assets/images/events/corporate/nais/nais-3.jpg',
+        bannerBottomMedia: '/src/assets/images/events/corporate/nais/nais.mp4',
+        bannerBottomImage: '/src/assets/images/events/corporate/nais/nais-3.jpg',
+        images: [
+            '/src/assets/images/events/corporate/nais/nais-1.jpg',
+            '/src/assets/images/events/corporate/nais/nais-2.jpg',
+            '/src/assets/images/events/corporate/nais/nais-3.jpg',
+            '/src/assets/images/events/corporate/nais/nais-4.jpg',
+            '/src/assets/images/events/corporate/nais/nais-5.jpg',
+            '/src/assets/images/events/corporate/nais/nais-6.jpg',
+        ],
+        fullDescription:'',
+    },
+    //birthdays
+    {
+        id: 8,
+        title: 'Цирк Дамира | 10 лет',
+        shortDescription: '«День рождения в стиле страшного цирка».',
+        category: 'birthdays',
+        slug: 'birthdaydamir',
+        bannerImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner.jpg',
+        bannerBottomMedia: '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-banner-vid.mp4',
+        bannerBottomImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner-bottom.jpg',
+        images: [
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-1.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-2.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-3.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-4.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-5.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-6.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-7.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-8.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-9.jpg'
+        ],
+        fullDescription:'Мы вдохновились ужастиками и ретро-',
+    },
+    {
+        id: 9,
+        title: 'Debut | Живи играюче',
+        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        category: 'birthdays',
+        slug: 'debut',
+        bannerImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner.jpg',
+        bannerBottomMedia: '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-banner-vid.mp4',
+        bannerBottomImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner-bottom.jpg',
+        images: [
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-1.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-2.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-3.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-4.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-5.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-6.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-7.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-8.jpg',
+            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-9.jpg'
+        ],
+        fullDescription:'',
+    },
+    {
+        id: 10,
+        title: 'Страшно красиво',
+        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        category: 'birthdays',
+        slug: 'bulgakov',
+        bannerImage: '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-1.jpg',
+        bannerBottomMedia: '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-banner-bottom.mp4',
+        bannerBottomImage: '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-3.jpg',
+        images: [
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-1.jpg',
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-2.jpg',
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-3.jpg',
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-4.jpg',
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-5.jpg',
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-6.jpg'
+        ],
+        fullDescription:'',
+    },
+    //servings
+    {
+        id: 11,
+        title: '9125 дней',
+        shortDescription: '«9125 дней любви».',
+        category: 'servings',
+        slug: '9125-days',
+        bannerImage: '/src/assets/images/events/servings/orange/serv-orange-3.jpg',
+        bannerBottomImage: '/src/assets/images/events/servings/orange/serv-orange-5.jpg',
+        images: [
+            '/src/assets/images/events/servings/orange/serv-orange-1.jpg',
+            '/src/assets/images/events/servings/orange/serv-orange-2.jpg',
+            '/src/assets/images/events/servings/orange/serv-orange-3.jpg',
+            '/src/assets/images/events/servings/orange/serv-orange-4.jpg',
+            '/src/assets/images/events/servings/orange/serv-orange-5.jpg',
+            '/src/assets/images/events/servings/orange/serv-orange-6.jpg'
+        ],
+        fullDescription:'',
+    },
+    {
+        id: 12,
+        title: 'Зеленая',
+        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        category: 'servings',
+        slug: 'green-serving',
+        bannerImage: '/src/assets/images/events/servings/green/serv-green-1.jpg',
+        bannerBottomMedia: '/src/assets/images/events/servings/green/serv-green-bottom-vid.mp4',
+        bannerBottomImage: '/src/assets/images/events/servings/green/serv-green-3.jpg',
+        images: [
+            '/src/assets/images/events/servings/green/serv-green-1.jpg',
+            '/src/assets/images/events/servings/green/serv-green-2.jpg',
+            '/src/assets/images/events/servings/green/serv-green-3.jpg',
+            '/src/assets/images/events/servings/green/serv-green-4.jpg',
+            '/src/assets/images/events/servings/green/serv-green-5.jpg',
+            '/src/assets/images/events/servings/green/serv-green-6.jpg'
+        ],
+        fullDescription:'',
+    },
+    {
+        id: 13,
+        title: 'Красная',
+        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        category: 'servings',
+        slug: 'red-serving',
+        bannerImage: '/src/assets/images/events/servings/red/serv-red-5.jpg',
+        bannerBottomMedia: '/src/assets/images/events/servings/red/serv-red-banner-bottom.mp4',
+        bannerBottomImage: '/src/assets/images/events/servings/red/serv-red-3.jpg',
+        images: [
+            '/src/assets/images/events/servings/red/serv-red-1.jpg',
+            '/src/assets/images/events/servings/red/serv-red-2.jpg',
+            '/src/assets/images/events/servings/red/serv-red-3.jpg',
+            '/src/assets/images/events/servings/red/serv-red-4.jpg',
+            '/src/assets/images/events/servings/red/serv-red-5.jpg',
+            '/src/assets/images/events/servings/red/serv-red-6.jpg',
+        ],
+        fullDescription:'',
+    },
+    {
+        id: 14,
+        title: 'Нежная',
+        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        category: 'servings',
+        slug: 'gently',
+        bannerImage: '/src/assets/images/events/servings/gently/serv-gently-1.jpg',
+        bannerBottomImage: '/src/assets/images/events/servings/gently/serv-gently-1.jpg',
+        images: [
+            '/src/assets/images/events/servings/gently/serv-gently-1.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-2.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-3.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-4.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-5.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-6.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-7.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-8.jpg',
+            '/src/assets/images/events/servings/gently/serv-gently-9.jpg'
+        ],
+        fullDescription:'',
+    }, 
+
 
 ]
 
