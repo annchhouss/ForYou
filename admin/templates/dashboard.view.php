@@ -58,7 +58,7 @@
                                     <?= $sub['formType'] === 'contactForm' ? 'Заявка' : 'Сотрудничество' ?>
                                 </span>
                                 <span class="submission-card__name"><?= htmlspecialchars($sub['name']) ?></span>
-                                <span class="submission-card__email"><?= htmlspecialchars($sub['email']) ?></span>
+                                <span class="submission-card__email"><?= htmlspecialchars($sub['phone']) ?></span>
                                 <span class="submission-card__date"><?= $sub['timestamp'] ?></span>
                             </div>
                             <div class="submission-card__actions">
@@ -74,8 +74,8 @@
                                 <span class="detail-value"><?= htmlspecialchars($sub['name']) ?></span>
                             </div>
                             <div class="detail-row">
-                                <span class="detail-label">Email:</span>
-                                <span class="detail-value"><?= htmlspecialchars($sub['email']) ?></span>
+                                <span class="detail-label">Номер телефона:</span>
+                                <span class="detail-value"><?= htmlspecialchars($sub['phone']) ?></span>
                             </div>
                             <?php if (!empty($sub['phone'])): ?>
                             <div class="detail-row">

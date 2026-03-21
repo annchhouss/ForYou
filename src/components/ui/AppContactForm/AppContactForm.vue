@@ -8,7 +8,7 @@ import {eventTypes} from '@models/homeData'
 const props = defineProps({
     initialBudget: {
         type: Array,
-        default: () => [50000, 200000]
+        default: () => [200000, 350000]
     }
 })
 
@@ -22,8 +22,8 @@ const form = ref({
     message: ''
 })
 
-const MIN_BUDGET = 10000
-const MAX_BUDGET = 500000
+const MIN_BUDGET = 50000
+const MAX_BUDGET = 1000000
 const RANGE = MAX_BUDGET - MIN_BUDGET
 
 const minPosition = computed(() => {
@@ -90,7 +90,7 @@ const handleSubmit = async () => {
         isLoading.value = false
     }
 }
-</script>
+</script> 
 
 <template>
     <section class="contact-form-section">
@@ -113,20 +113,20 @@ const handleSubmit = async () => {
                                 v-model="form.name"
                                 type="text"
                                 class="form-input"
-                                placeholder="Type here"
+                                placeholder="Введите Ваше имя*"
                                 required
                                 />
                             <div class="form-input-line"></div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Почта</label>
+                        <label class="form-label">Телефон</label>
                         <div class="form-input-wrapper">
                             <input
-                                v-model="form.email"
-                                type="email"
+                                v-model="form.phone"
+                                type="tel"
                                 class="form-input"
-                                placeholder="Type here"
+                                placeholder="Введите Ваш номер телефона*"
                                 required
                             />
                             <div class="form-input-line"></div>
@@ -156,7 +156,7 @@ const handleSubmit = async () => {
                 </div>
                 <div class="form-group">
                     <label class="form-label">Ваш Бюджет</label>
-                    <p class="form-sublabel">Slide to indicate your budget range</p>
+                    <p class="form-sublabel">Выберите диапазон</p>
                     <div class="budget-slider-wrapper">
                         <div class="budget-slider-container">
                             <div class="budget-slider-track"></div>
@@ -205,7 +205,7 @@ const handleSubmit = async () => {
                         <textarea
                             v-model="form.message"
                             class="form-textarea"
-                            placeholder="Type here"
+                            placeholder="Введите сообщение"
                             rows="4"
                         >
                         </textarea>
