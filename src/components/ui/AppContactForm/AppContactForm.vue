@@ -4,6 +4,7 @@ import {ref, computed} from 'vue'
 import AppButton from '@/components/ui/AppButton/AppButton.vue'
 
 import {eventTypes} from '@models/homeData'
+import {sendToFormspree} from '@/services/formspreeService'
 
 const props = defineProps({
     initialBudget: {
@@ -56,22 +57,25 @@ const handleSubmit = async () => {
     isLoading.value = true
     submitError.value = ''
     submitSuccess.value = false
-    
+
     try {
-        const response = await fetch('/api/submit.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                ...form.value,
-                formType: 'contactForm'
+        const [emailSent, backendResponse] = await Promise.all([
+            sendToFormspree(form.value, 'contactForm'),
+            fetch('/api/submit.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ...form.value,
+                    formType: 'contactForm'
+                })
             })
-        })
-        
-        const result = await response.json()
-        
-        if (result.success) {
+        ])
+
+        const backendResult = await backendResponse.json()
+
+        if (emailSent && backendResult.success) {
             submitSuccess.value = true
             form.value = {
                 name: '',
@@ -82,7 +86,7 @@ const handleSubmit = async () => {
             }
             emit('submit', { success: true })
         } else {
-            submitError.value = result.message || 'Ошибка при отправке'
+            submitError.value = backendResult.message || 'Ошибка при отправке'
         }
     } catch (error) {
         submitError.value = 'Ошибка сети: ' + error.message
