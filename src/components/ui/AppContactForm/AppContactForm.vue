@@ -17,7 +17,7 @@ const emit = defineEmits(['submit'])
 
 const form = ref({
     name: '',
-    email: '',
+    phone: '',
     eventType: [],
     budget: props.initialBudget,
     message: ''
@@ -79,7 +79,7 @@ const handleSubmit = async () => {
             submitSuccess.value = true
             form.value = {
                 name: '',
-                email: '',
+                phone: '',
                 eventType: [],
                 budget: props.initialBudget,
                 message: ''
@@ -130,7 +130,7 @@ const handleSubmit = async () => {
                                 v-model="form.phone"
                                 type="tel"
                                 class="form-input"
-                                placeholder="Введите Ваш номер телефона*"
+                                placeholder="+7 (XXX) XXX-XX-XX"
                                 required
                             />
                             <div class="form-input-line"></div>

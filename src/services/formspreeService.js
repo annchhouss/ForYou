@@ -2,24 +2,24 @@ import {formspreeEndpoint} from '../config/formspree'
 
 export async function sendToFormspree(data, type) {
     const formData = new FormData()
-    
-    formData.append('name', data.name || '')
-    formData.append('email', data.email || '')
-    
-    if (data.phone !== undefined) {
-        formData.append('phone', data.phone)
+
+    formData.append('Имя', data.name || '')
+    formData.append('Телефон', data.phone || '')
+
+    if (type === 'contactModal') {
+        formData.append('Почта', data.email || '—')
     }
-    
+
     if (type === 'contactForm') {
-        formData.append('eventType', Array.isArray(data.eventType) ? data.eventType.join(', ') : (data.eventType || ''))
-        formData.append('budget', Array.isArray(data.budget) ? `${data.budget[0]} - ${data.budget[1]}` : (data.budget || ''))
+        formData.append('Тип мероприятия', Array.isArray(data.eventType) ? data.eventType.join(', ') : (data.eventType || ''))
+        formData.append('Бюджет', Array.isArray(data.budget) ? `${data.budget[0]} - ${data.budget[1]}` : (data.budget || ''))
     }
-    
+
     if (data.message) {
-        formData.append('message', data.message)
+        formData.append('Сообщение', data.message)
     }
-    
-    formData.append('formType', type)
+
+    formData.append('Тип формы', type === 'contactForm' ? 'Заявка' : 'Сотрудничество')
 
     try {
         const response = await fetch(formspreeEndpoint, {
@@ -29,7 +29,7 @@ export async function sendToFormspree(data, type) {
                 'Accept': 'application/json'
             }
         })
-        
+
         return response.ok
     } catch (error) {
         console.error('Formspree error:', error)

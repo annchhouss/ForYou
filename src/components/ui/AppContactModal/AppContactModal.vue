@@ -118,13 +118,12 @@ const resetForm = () => {
                                 />
                             </div>
                             <div class="form-group">
-                                <label class="form-label">Почта *</label>
+                                <label class="form-label">Почта</label>
                                 <input
                                     v-model="form.email"
                                     type="email"
                                     class="form-input"
                                     placeholder="example@email.com"
-                                    required
                                 />
                             </div>
                         </div>
