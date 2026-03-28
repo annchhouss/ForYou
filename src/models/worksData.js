@@ -188,7 +188,7 @@ export const works = [
         shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
         category: 'weddings',
         slug: 'vse-prosto',
-        bannerImage: '/src/assets/images/events/weddings/kod-serdtsa/banner.jpg',
+        bannerImage: '/src/assets/images/events/weddings/vse-prosto/vse-prosto-2.jpg',
         bannerBottomMedia: '/src/assets/images/events/weddings/vse-prosto/vse-prosto-banner-vid.mp4',
         bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
         images: [
