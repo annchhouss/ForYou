@@ -1,6 +1,7 @@
 <script setup>
 import {ref} from 'vue'
 import AppButton from '@/components/ui/AppButton/AppButton.vue'
+import {sendToFormspree} from '@/services/formspreeService'
 
 const props = defineProps({
     isOpen: {
@@ -30,27 +31,30 @@ const handleSubmit = async () => {
     isLoading.value = true
     submitError.value = ''
     submitSuccess.value = false
-    
+
     try {
-        const response = await fetch('/api/submit.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                ...form.value,
-                formType: 'contactModal'
+        const [emailSent, backendResponse] = await Promise.all([
+            sendToFormspree(form.value, 'contactModal'),
+            fetch('/api/submit.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ...form.value,
+                    formType: 'contactModal'
+                })
             })
-        })
-        
-        const result = await response.json()
-        
-        if (result.success) {
+        ])
+
+        const backendResult = await backendResponse.json()
+
+        if (emailSent && backendResult.success) {
             submitSuccess.value = true
             resetForm()
             closeModal()
         } else {
-            submitError.value = result.message || 'Ошибка при отправке'
+            submitError.value = backendResult.message || 'Ошибка при отправке'
         }
     } catch (error) {
         submitError.value = 'Ошибка сети: ' + error.message
@@ -114,13 +118,12 @@ const resetForm = () => {
                                 />
                             </div>
                             <div class="form-group">
-                                <label class="form-label">Почта *</label>
+                                <label class="form-label">Почта</label>
                                 <input
                                     v-model="form.email"
                                     type="email"
                                     class="form-input"
                                     placeholder="example@email.com"
-                                    required
                                 />
                             </div>
                         </div>

@@ -55,10 +55,10 @@
                         <div class="submission-card__header" onclick="toggleDetails('<?= $sub['id'] ?>')">
                             <div class="submission-card__info">
                                 <span class="submission-card__type submission-card__type--<?= $sub['formType'] === 'contactForm' ? 'form' : 'modal' ?>">
-                                    <?= $sub['formType'] === 'contactForm' ? 'Заявка' : 'Сотрудничество' ?>
+                                    <?= $sub['formTypeLabel'] ?? ($sub['formType'] === 'contactForm' ? 'Заявка' : 'Сотрудничество') ?>
                                 </span>
                                 <span class="submission-card__name"><?= htmlspecialchars($sub['name']) ?></span>
-                                <span class="submission-card__email"><?= htmlspecialchars($sub['phone']) ?></span>
+                                <span class="submission-card__phone"><?= htmlspecialchars($sub['phone']) ?: '—' ?></span>
                                 <span class="submission-card__date"><?= $sub['timestamp'] ?></span>
                             </div>
                             <div class="submission-card__actions">
@@ -74,13 +74,13 @@
                                 <span class="detail-value"><?= htmlspecialchars($sub['name']) ?></span>
                             </div>
                             <div class="detail-row">
-                                <span class="detail-label">Номер телефона:</span>
-                                <span class="detail-value"><?= htmlspecialchars($sub['phone']) ?></span>
-                            </div>
-                            <?php if (!empty($sub['phone'])): ?>
-                            <div class="detail-row">
                                 <span class="detail-label">Телефон:</span>
-                                <span class="detail-value"><?= htmlspecialchars($sub['phone']) ?></span>
+                                <span class="detail-value"><?= htmlspecialchars($sub['phone']) ?: '—' ?></span>
+                            </div>
+                            <?php if ($sub['formType'] === 'contactModal'): ?>
+                            <div class="detail-row">
+                                <span class="detail-label">Почта:</span>
+                                <span class="detail-value"><?= htmlspecialchars($sub['email']) ?: '—' ?></span>
                             </div>
                             <?php endif; ?>
                             <?php if (!empty($sub['eventType'])): ?>

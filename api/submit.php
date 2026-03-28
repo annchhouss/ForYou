@@ -27,14 +27,15 @@ if (!$input) {
 }
 
 $formType = $input['formType'] ?? 'unknown';
+$formTypeLabel = $formType === 'contactForm' ? 'Заявка' : 'Сотрудничество';
 $timestamp = date('Y-m-d H:i:s');
 
 $data = [
     'id' => uniqid(),
     'timestamp' => $timestamp,
     'formType' => $formType,
+    'formTypeLabel' => $formTypeLabel,
     'name' => $input['name'] ?? '',
-    'email' => $input['email'] ?? '',
     'phone' => $input['phone'] ?? '',
     'eventType' => isset($input['eventType']) && is_array($input['eventType']) ? implode(', ', $input['eventType']) : '',
     'budgetMin' => $input['budget'][0] ?? '',
@@ -42,6 +43,10 @@ $data = [
     'message' => $input['message'] ?? '',
     'status' => 'new'
 ];
+
+if ($formType === 'contactModal') {
+    $data['email'] = $input['email'] ?? '—';
+}
 
 $file = __DIR__ . '/submissions.json';
 $submissions = [];
