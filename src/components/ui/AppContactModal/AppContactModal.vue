@@ -16,18 +16,26 @@ const form = ref({
     name: '',
     email: '',
     phone: '',
-    message: ''
+    message: '',
+    agreement: false
 })
 
 const isLoading = ref(false)
 const submitError = ref('')
 const submitSuccess = ref(false)
+const agreementError = ref('')
 
 const closeModal = () => {
     emit('close')
 }
 
 const handleSubmit = async () => {
+    if (!form.value.agreement) {
+        agreementError.value = 'Необходимо согласие на обработку персональных данных'
+        return
+    }
+    agreementError.value = ''
+
     isLoading.value = true
     submitError.value = ''
     submitSuccess.value = false
@@ -49,7 +57,7 @@ const handleSubmit = async () => {
 
         const backendResult = await backendResponse.json()
 
-        if (emailSent && backendResult.success) {
+        if (backendResult.success) {
             submitSuccess.value = true
             resetForm()
             closeModal()
@@ -68,7 +76,8 @@ const resetForm = () => {
         name: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        agreement: false
     }
 }
 </script>
@@ -96,12 +105,6 @@ const resetForm = () => {
                     </div>
                 </div>
                 <div class="modal-form-wrapper">
-                    <div v-if="submitSuccess" class="success-message">
-                        ✓ Заявка успешно отправлена!
-                    </div>
-                    <div v-if="submitError" class="error-message">
-                        {{ submitError }}
-                    </div>
                     <form
                         class="modal-form"
                         @submit.prevent="handleSubmit"
@@ -145,6 +148,28 @@ const resetForm = () => {
                                 placeholder="Опишите вашу задачу или вопрос..."
                                 rows="4"
                             />
+                        </div>
+                        <div class="form-group">
+                            <label class="agreement-label">
+                                <input
+                                    v-model="form.agreement"
+                                    type="checkbox"
+                                    class="agreement-checkbox"
+                                />
+                                <span class="agreement-text">
+                                    Я согласен на обработку
+                                    <a href="/soglasie.pdf" target="_blank" class="agreement-link">персональных данных</a>
+                                </span>
+                            </label>
+                            <div v-if="agreementError" class="agreement-error">
+                                {{ agreementError }}
+                            </div>
+                        </div>
+                        <div v-if="submitSuccess" class="success-message">
+                            ✓ Заявка успешно отправлена!
+                        </div>
+                        <div v-if="submitError" class="error-message">
+                            {{ submitError }}
                         </div>
                         <AppButton
                             type="submit"
