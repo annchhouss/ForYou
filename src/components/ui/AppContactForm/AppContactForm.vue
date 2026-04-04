@@ -20,7 +20,8 @@ const form = ref({
     phone: '',
     eventType: [],
     budget: props.initialBudget,
-    message: ''
+    message: '',
+    agreement: false
 })
 
 const MIN_BUDGET = 50000
@@ -53,7 +54,16 @@ const isLoading = ref(false)
 const submitError = ref('')
 const submitSuccess = ref(false)
 
+const agreementError = ref('')
+
 const handleSubmit = async () => {
+    if (!form.value.agreement) {
+        agreementError.value = 'Необходимо согласие на обработку персональных данных'
+
+        return
+    }
+    agreementError.value = ''
+
     isLoading.value = true
     submitError.value = ''
     submitSuccess.value = false
@@ -75,14 +85,15 @@ const handleSubmit = async () => {
 
         const backendResult = await backendResponse.json()
 
-        if (emailSent && backendResult.success) {
+        if (backendResult.success) {
             submitSuccess.value = true
             form.value = {
                 name: '',
                 phone: '',
                 eventType: [],
                 budget: props.initialBudget,
-                message: ''
+                message: '',
+                agreement: false
             }
             emit('submit', { success: true })
         } else {
@@ -99,12 +110,6 @@ const handleSubmit = async () => {
 <template>
     <section class="contact-form-section">
         <div class="container">
-            <div v-if="submitSuccess" class="success-message">
-                ✓ Заявка успешно отправлена!
-            </div>
-            <div v-if="submitError" class="error-message">
-                {{ submitError }}
-            </div>
             <form
                 class="contact-form"
                 @submit.prevent="handleSubmit"
@@ -215,6 +220,28 @@ const handleSubmit = async () => {
                         </textarea>
                         <div class="form-input-line"></div>
                     </div>
+                </div>
+                <div class="form-group">
+                    <label class="agreement-label">
+                        <input
+                            v-model="form.agreement"
+                            type="checkbox"
+                            class="agreement-checkbox"
+                        />
+                        <span class="agreement-text">
+                            Я согласен на обработку
+                            <a href="/soglasie.pdf" target="_blank" class="agreement-link">персональных данных</a>
+                        </span>
+                    </label>
+                    <div v-if="agreementError" class="agreement-error">
+                        {{ agreementError }}
+                    </div>
+                </div>
+                <div v-if="submitSuccess" class="success-message">
+                    ✓ Заявка успешно отправлена!
+                </div>
+                <div v-if="submitError" class="error-message">
+                    {{ submitError }}
                 </div>
                 <AppButton
                     type="submit"
