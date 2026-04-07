@@ -1,1 +1,1 @@
-export const formspreeEndpoint = ''
+export const formspreeEndpoint = 'https://formspree.io/f/mvzvvarv'

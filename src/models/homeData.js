@@ -180,10 +180,10 @@ export const footerData = {
             link: "/contacts"
         },
     ],
-    email: "studiya.diyatebya@mail.ru",
+    email: "studiya_dlyatebya@mail.ru",
     phone: "+7(928)279-78-72",
     location: "Ростов-на-Дону",
-    termsText: "Договор оферты",
+    termsText: "Пользовательское соглашение",
     termsLink: "#",
     privacyText: "Согласие на обработку персональных данных",
     privacyLink: "#",
