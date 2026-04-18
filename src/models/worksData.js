@@ -46,7 +46,7 @@ export const worksCategories = [
         id: 'servings',
         title: 'Сервировки',
         slug: 'servings',
-        description: 'Когда важна не масштабность, а глубина впечатлений. Для тех самых тёплых встреч, где ценен каждый гость и каждое слово. Мы верим, что магия — в деталях, а уют — в продуманности. Создаём камерное пространство, где обстановка говорит сама за себя: «Здесь вам рады».',
+        description: 'Идеальная форма для вашего мероприятия <br />Когда важна не масштабность, а глубина впечатлений. Для тех самых тёплых встреч, где ценен каждый гость и каждое слово. Мы верим, что магия — в деталях, а уют — в продуманности. Создаём камерное пространство, где обстановка говорит сама за себя: «Здесь вам рады».',
         image: '/src/assets/images/events/servings/banner.png',
         buttonText: 'Перейти'
     },
@@ -142,11 +142,11 @@ export const works = [
     {
         id: 2,
         title: 'Казаки | Любовь бескрайняя как степь',
-        shortDescription: 'Любовь - это то чувство, которое возникает неожиданно, оно как будто появляется из ниоткуда.',
+        shortDescription: 'Мы открываем историю одного особенного проекта — свадьбы Дмитрия и Анастасии. На эту концепцию нас вдохновила любовь пары к донским традициям и большой интерес к казачеству.',
         category: 'weddings',
         slug: 'kazaki',
         bannerImage: '/src/assets/images/events/weddings/kazaki/kazak-8.jpg',
-        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        bannerBottomImage: '/src/assets/images/events/weddings/kazaki/kazak-3.jpg',
         images: [
             '/src/assets/images/events/weddings/kazaki/kazak-1.jpg',
             '/src/assets/images/events/weddings/kazaki/kazak-2.jpg',
@@ -158,7 +158,7 @@ export const works = [
             '/src/assets/images/events/weddings/kazaki/kazak-8.jpg',
             '/src/assets/images/events/weddings/kazaki/kazak-9.jpg'
         ],
-        fullDescription: 'Название свадьбы было придумано не просто так, ребята познакомились и стали переписываться. Вова отправил ссылку на сайт «100 вопросов, чтобы влюбиться», ребята каждый день отвечали по одному вопросу, и любовь случилась',
+        fullDescription: 'Мы использовали нестандартную расстановку столов. Длинные прямоугольные столы - отсылка к традиционным казачьим застольям, за которыми собиралась вся семья. А деревянные стулья добавили пространству тепла и того самого уюта',
     },
     {
         id: 3,
@@ -168,7 +168,7 @@ export const works = [
         slug: 'vladislav&natali',
         bannerImage: '/src/assets/images/events/weddings/natali/natali-5.JPG',
         bannerBottomMedia: '/src/assets/images/events/weddings/natali/natali-banner-vid.mp4',
-        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        bannerBottomImage: '/src/assets/images/events/weddings/natali/natali-8.JPG',
         images: [
             '/src/assets/images/events/weddings/natali/natali-1.JPG',
             '/src/assets/images/events/weddings/natali/natali-2.JPG',
@@ -188,9 +188,9 @@ export const works = [
         shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
         category: 'weddings',
         slug: 'vse-prosto',
-        bannerImage: '/src/assets/images/events/weddings/vse-prosto/vse-prosto-2.jpg',
+        bannerImage: '/src/assets/images/events/weddings/vse-prosto/vse-prosto-4.jpg',
         bannerBottomMedia: '/src/assets/images/events/weddings/vse-prosto/vse-prosto-banner-vid.mp4',
-        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        bannerBottomImage: '/src/assets/images/events/weddings/vse-prosto/vse-prosto-9.jpg',
         images: [
             '/src/assets/images/events/weddings/vse-prosto/vse-prosto-1.jpg',
             '/src/assets/images/events/weddings/vse-prosto/vse-prosto-2.jpg',
@@ -213,7 +213,7 @@ export const works = [
         slug: 'ecos',
         bannerImage: '/src/assets/images/events/corporate/ecos/ecos-6.jpg',
         bannerBottomMedia: '/src/assets/images/events/corporate/ecos/ecos.mp4',
-        bannerBottomImage: '/src/assets/images/events/corporate/ecos/banner-bottom.jpg',
+        bannerBottomImage: '/src/assets/images/events/corporate/ecos/ecos-9.jpg',
         images: [
             '/src/assets/images/events/corporate/ecos/ecos-1.jpg',
             '/src/assets/images/events/corporate/ecos/ecos-2.jpg',
@@ -247,7 +247,7 @@ export const works = [
             '/src/assets/images/events/corporate/circus/circus-8.jpg',
             '/src/assets/images/events/corporate/circus/circus-9.jpg'
         ],
-        fullDescription: '',
+        fullDescription: 'Корпоратив в стиле цирк "GRAIN CIRCUS" ',
     },
     {
         id: 7,
@@ -266,7 +266,7 @@ export const works = [
             '/src/assets/images/events/corporate/nais/nais-5.jpg',
             '/src/assets/images/events/corporate/nais/nais-6.jpg',
         ],
-        fullDescription:'',
+        fullDescription:'НАИС миссия Выполнима',
     },
     //birthdays
     {
@@ -275,48 +275,45 @@ export const works = [
         shortDescription: '«День рождения в стиле страшного цирка».',
         category: 'birthdays',
         slug: 'birthdaydamir',
-        bannerImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner.jpg',
-        bannerBottomMedia: '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-banner-vid.mp4',
-        bannerBottomImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner-bottom.jpg',
+        bannerImage: '/src/assets/images/events/birthdays/circus/circ-6.jpg',
+        bannerBottomMedia: '/src/assets/images/events/birthdays/circus/circ-vid.mp4',
+        bannerBottomImage: '/src/assets/images/events/birthdays/circus/circ-3.jpg',
         images: [
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-1.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-2.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-3.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-4.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-5.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-6.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-7.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-8.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-9.jpg'
+            '/src/assets/images/events/birthdays/circus/circ-1.jpg',
+            '/src/assets/images/events/birthdays/circus/circ-2.jpg',
+            '/src/assets/images/events/birthdays/circus/circ-3.jpg',
+            '/src/assets/images/events/birthdays/circus/circ-4.jpg',
+            '/src/assets/images/events/birthdays/circus/circ-5.jpg',
+            '/src/assets/images/events/birthdays/circus/circ-6.jpg'
         ],
-        fullDescription:'Мы вдохновились ужастиками и ретро-',
+        fullDescription:'Мы вдохновились ужастиками и ретро--стилистикой, создавали праздник от которого даже у взрослых по спине бежал холодок',
     },
     {
         id: 9,
-        title: 'Debut | Живи играюче',
-        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        title: 'Debut | Живи играючи',
+        shortDescription: '«Ведь в 50 все только начинается!».',
         category: 'birthdays',
         slug: 'debut',
-        bannerImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner.jpg',
-        bannerBottomMedia: '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-banner-vid.mp4',
-        bannerBottomImage: '/src/assets/images/events/birthdays/kod-serdtsa/banner-bottom.jpg',
+        bannerImage: '/src/assets/images/events/birthdays/debut/debut-3.jpg',
+        bannerBottomMedia: '/src/assets/images/events/birthdays/debut/debut-vid.mp4',
+        bannerBottomImage: '/src/assets/images/events/birthdays/debut/debut-7.jpg',
         images: [
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-1.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-2.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-3.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-4.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-5.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-6.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-7.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-8.jpg',
-            '/src/assets/images/events/birthdays/vse-prosto/vse-prosto-9.jpg'
+            '/src/assets/images/events/birthdays/debut/debut-1.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-2.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-3.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-4.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-5.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-6.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-7.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-8.jpg',
+            '/src/assets/images/events/birthdays/debut/debut-9.jpg'
         ],
-        fullDescription:'',
+        fullDescription:'Когда жизнь наполнена красками. Когда энергия кипит. Когда возраст лишь отражение мудрости человека. Ведь в 50 все только начинается! Живи играючи',
     },
     {
         id: 10,
         title: 'Страшно красиво',
-        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        shortDescription: '«Современный бал»',
         category: 'birthdays',
         slug: 'bulgakov',
         bannerImage: '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-1.jpg',
@@ -330,7 +327,7 @@ export const works = [
             '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-5.jpg',
             '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-6.jpg'
         ],
-        fullDescription:'',
+        fullDescription:'Мы черпали вдохновение в легендарном романе M.Булгакова и самом загадочном событии книги - бале Маргариты. Наша задача была не просто оформить пространство, а создать магический театр эмоций, где гости проходят через «завесу реальности» и попадают в другой мир. Наша идея создать «путешествие», где гости сначала наблюдают, а затем погружаются в атмосферу праздника. Как в романе Булгакова: сначала - туман, ожидание, интрига... /n/n А потом - бал, где оживают мечты...',
     },
     //servings
     {
@@ -349,12 +346,12 @@ export const works = [
             '/src/assets/images/events/servings/orange/serv-orange-5.jpg',
             '/src/assets/images/events/servings/orange/serv-orange-6.jpg'
         ],
-        fullDescription:'',
+        fullDescription:'Когда детали имеют значение',
     },
     {
         id: 12,
-        title: 'Зеленая',
-        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        title: 'В оттенках зеленого',
+        shortDescription: '',
         category: 'servings',
         slug: 'green-serving',
         bannerImage: '/src/assets/images/events/servings/green/serv-green-1.jpg',
@@ -368,12 +365,12 @@ export const works = [
             '/src/assets/images/events/servings/green/serv-green-5.jpg',
             '/src/assets/images/events/servings/green/serv-green-6.jpg'
         ],
-        fullDescription:'',
+        fullDescription:'Перед нами стояла задача сделать уютный вечер для дня рождения на 10 человек. Для создания более камерной атмосферы, мы зашили весь зал тканью. По центру зала поставили необычной формы прямоугольный стол',
     },
     {
         id: 13,
-        title: 'Красная',
-        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        title: 'В ритме красного',
+        shortDescription: '',
         category: 'servings',
         slug: 'red-serving',
         bannerImage: '/src/assets/images/events/servings/red/serv-red-5.jpg',
@@ -387,12 +384,12 @@ export const works = [
             '/src/assets/images/events/servings/red/serv-red-5.jpg',
             '/src/assets/images/events/servings/red/serv-red-6.jpg',
         ],
-        fullDescription:'',
+        fullDescription:'Оформление декора в едином цвете - сейчас тренд, который набирает обороты. Моно оформление подразумевает использование одного цвета в различных оттенках и текстурах. Это позволяет создать гармоничное и стильное оформление, где каждый элемент будет дополнять другой',
     },
     {
         id: 14,
-        title: 'Нежная',
-        shortDescription: '«Иногда то, что кажется простым на первый взгляд, не всегда таковым является».',
+        title: 'Цветы и нежность',
+        shortDescription: '',
         category: 'servings',
         slug: 'gently',
         bannerImage: '/src/assets/images/events/servings/gently/serv-gently-1.jpg',
@@ -408,7 +405,7 @@ export const works = [
             '/src/assets/images/events/servings/gently/serv-gently-8.jpg',
             '/src/assets/images/events/servings/gently/serv-gently-9.jpg'
         ],
-        fullDescription:'',
+        fullDescription:'Тщательная проработка посуды, тарелок, бокалов, приборов, салфеток, скатертей, карточек - все это создает невероятную красоту',
     }, 
 
 
