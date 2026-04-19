@@ -57,8 +57,9 @@ const submitSuccess = ref(false)
 const agreementError = ref('')
 
 const handleSubmit = async () => {
-    if (!form.value.agreement) {
-        agreementError.value = 'Необходимо согласие на обработку персональных данных'
+    if (form.value.agreement !== true) {
+        agreementError.value =
+            'Необходимо согласие на обработку персональных данных. Поле обязательно для заполнения.'
         return
     }
     agreementError.value = ''

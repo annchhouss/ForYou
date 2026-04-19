@@ -2,6 +2,10 @@
 import {computed} from 'vue'
 
 const props = defineProps({
+    type: {
+        type: String,
+        default: 'button'
+    },
     variant: {
         type: String,
         default: 'primary',
@@ -12,6 +16,10 @@ const props = defineProps({
         default: 'medium',
         validator: (value) => ['small', 'medium', 'large'].includes(value)
     },
+    fullWidth: {
+        type: Boolean,
+        default: false
+    }
 })
 
 const emit = defineEmits(['click'])
@@ -30,6 +38,7 @@ const handleClick = (event) => {
 
 <template>
     <button
+        :type="type"
         :class="buttonClasses"
         @click="handleClick"
     >
