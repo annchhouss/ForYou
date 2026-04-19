@@ -9,7 +9,7 @@ import {sendToFormspree} from '@/services/formspreeService'
 const props = defineProps({
     initialBudget: {
         type: Array,
-        default: () => [200000, 350000]
+        default: () => [200000, 500000]
     }
 })
 
@@ -59,7 +59,6 @@ const agreementError = ref('')
 const handleSubmit = async () => {
     if (!form.value.agreement) {
         agreementError.value = 'Необходимо согласие на обработку персональных данных'
-
         return
     }
     agreementError.value = ''

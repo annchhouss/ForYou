@@ -159,7 +159,7 @@ const toggleFaq = (index) => {
                     </div>
                 </div>
             </section>
-            <AppContactForm :initial-budget="[70000,200000]" />
+            <AppContactForm :initial-budget="[200000, 500000]" />
         </main>
         <AppFooter />
         <AppContactModal

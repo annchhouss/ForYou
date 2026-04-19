@@ -184,8 +184,8 @@ export const footerData = {
     phone: "+7(928)279-78-72",
     location: "Ростов-на-Дону",
     termsText: "Пользовательское соглашение",
-    termsLink: "#",
+    termsLink: "/user-agreement.pdf",
     privacyText: "Согласие на обработку персональных данных",
-    privacyLink: "#",
+    privacyLink: "/soglasie.pdf",
     copyright: "© 2025 ForYou. All rights reserved."
 };

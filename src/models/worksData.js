@@ -72,13 +72,16 @@ export const categoryDetails = {
         }
     },
     corporate: {
-        bannerImage: '/src/assets/images/categories/corporate-banner.jpg',
+        bannerImage: '/src/assets/images/events/corporate/banner.png',
         title: 'Корпоративы',
         description: 'Примеры наших корпоративных работ.',
         gallery: [
-            '/src/assets/images/categories/corporate-gallery-1.jpg',
-            '/src/assets/images/categories/corporate-gallery-2.jpg',
-            '/src/assets/images/categories/corporate-gallery-3.jpg'
+            '/src/assets/images/events/corporate/ecos/ecos-6.JPG',
+            '/src/assets/images/events/corporate/circus/circus-5.jpg',
+            '/src/assets/images/events/corporate/nais/nais-3.JPG',
+            '/src/assets/images/events/corporate/ecos/ecos-1.JPG',
+            '/src/assets/images/events/corporate/circus/circus-1.jpg',
+            '/src/assets/images/events/corporate/nais/nais-5.JPG'
         ],
         categoryIntro: {
             title: 'Наш подход',
@@ -87,13 +90,16 @@ export const categoryDetails = {
         }
     },
     birthdays: {
-        bannerImage: '/src/assets/images/categories/birthdays-banner.jpg',
+        bannerImage: '/src/assets/images/events/birthdays/banner.png',
         title: 'Дни рождения',
         description: 'Примеры наших работ на дни рождения.',
         gallery: [
-            '/src/assets/images/categories/birthday-gallery-1.jpg',
-            '/src/assets/images/categories/birthday-gallery-2.jpg',
-            '/src/assets/images/categories/birthday-gallery-3.jpg'
+            '/src/assets/images/events/birthdays/circus/circ-6.JPG',
+            '/src/assets/images/events/birthdays/debut/debut-3.JPG',
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-1.JPG',
+            '/src/assets/images/events/birthdays/circus/circ-2.JPG',
+            '/src/assets/images/events/birthdays/debut/debut-1.JPG',
+            '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-3.JPG'
         ],
         categoryIntro: {
             title: 'Наш подход',
@@ -102,13 +108,16 @@ export const categoryDetails = {
         }
     },
     servings: {
-        bannerImage: '/src/assets/images/categories/servings-banner.jpg',
+        bannerImage: '/src/assets/images/events/servings/banner.png',
         title: 'Сервировки',
         description: 'Примеры наших работ сервировки.',
         gallery: [
-            '/src/assets/images/categories/serving-gallery-1.jpg',
-            '/src/assets/images/categories/serving-gallery-2.jpg',
-            '/src/assets/images/categories/serving-gallery-3.jpg'
+            '/src/assets/images/events/servings/orange/serv-orange-3.jpg',
+            '/src/assets/images/events/servings/green/serv-green-1.jpg',
+            '/src/assets/images/events/servings/red/serv-red-5.JPG',
+            '/src/assets/images/events/servings/gently/serv-gently-1.JPG',
+            '/src/assets/images/events/servings/orange/serv-orange-1.jpg',
+            '/src/assets/images/events/servings/green/serv-green-3.jpg'
         ],
         categoryIntro: {
             title: 'Наш подход',
