@@ -23,7 +23,7 @@ beforeEach(() => {
 })
 
 describe('Формы — согласие на ПД (чекбокс обязателен)', () => {
-    it('«Контакты»: без галочки — видна ошибка, заявка не уходит на сервер', async () => {
+    it('«Контакты»: без отмеченного чекбокса — видна ошибка, заявка не уходит на сервер', async () => {
         const wrapper = mount(AppContactForm)
 
         await wrapper.get('[placeholder="Введите Ваше имя*"]').setValue('Тест')
@@ -41,7 +41,7 @@ describe('Формы — согласие на ПД (чекбокс обязат
         expect(globalThis.fetch).not.toHaveBeenCalled()
     })
 
-    it('Модальное окно: без галочки — видна ошибка, заявка не уходит на сервер', async () => {
+    it('Модальное окно: без отмеченного чекбокса — видна ошибка, заявка не уходит на сервер', async () => {
         const wrapper = mount(AppContactModal, {
             props: {isOpen: true},
             attachTo: document.body
