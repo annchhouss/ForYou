@@ -137,7 +137,7 @@ export const works = [
         slug: 'kod-serdtsa',
         bannerImage: '/src/assets/images/events/weddings/kod-serdtsa/banner.jpg',
         bannerBottomMedia: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.mp4',
-        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner-bottom.jpg',
+        bannerBottomImage: '/src/assets/images/events/weddings/kod-serdtsa/banner.jpg',
         images: [
             '/src/assets/images/events/weddings/kod-serdtsa/7.png',
             '/src/assets/images/events/weddings/kod-serdtsa/1.png',
@@ -295,7 +295,7 @@ export const works = [
             '/src/assets/images/events/birthdays/circus/circ-5.jpg',
             '/src/assets/images/events/birthdays/circus/circ-6.jpg'
         ],
-        fullDescription:'Мы вдохновились ужастиками и ретро--стилистикой, создавали праздник от которого даже у взрослых по спине бежал холодок',
+        fullDescription:'Мы вдохновились ужастиками и ретро-стилистикой, создавали праздник от которого даже у взрослых по спине бежал холодок',
     },
     {
         id: 9,
@@ -336,7 +336,7 @@ export const works = [
             '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-5.jpg',
             '/src/assets/images/events/birthdays/bulgakov/strashno-krasivo-6.jpg'
         ],
-        fullDescription:'Мы черпали вдохновение в легендарном романе M.Булгакова и самом загадочном событии книги - бале Маргариты. Наша задача была не просто оформить пространство, а создать магический театр эмоций, где гости проходят через «завесу реальности» и попадают в другой мир. Наша идея создать «путешествие», где гости сначала наблюдают, а затем погружаются в атмосферу праздника. Как в романе Булгакова: сначала - туман, ожидание, интрига... /n/n А потом - бал, где оживают мечты...',
+        fullDescription:'Мы черпали вдохновение в легендарном романе M.Булгакова и самом загадочном событии книги - бале Маргариты. Наша задача была не просто оформить пространство, а создать магический театр эмоций, где гости проходят через «завесу реальности» и попадают в другой мир. Наша идея создать «путешествие», где гости сначала наблюдают, а затем погружаются в атмосферу праздника. Как в романе Булгакова: сначала - туман, ожидание, интрига...  А потом - бал, где оживают мечты...',
     },
     //servings
     {
@@ -355,7 +355,7 @@ export const works = [
             '/src/assets/images/events/servings/orange/serv-orange-5.jpg',
             '/src/assets/images/events/servings/orange/serv-orange-6.jpg'
         ],
-        fullDescription:'Когда детали имеют значение',
+        fullDescription:'Когда детали имеют значение. 9125 дней или 25 лет любви. Сервировка была предназначена для прекрасной пары, которая вместе уже 25 лет! Ну, или все-таки 9125 дней',
     },
     {
         id: 12,
@@ -382,7 +382,7 @@ export const works = [
         shortDescription: '',
         category: 'servings',
         slug: 'red-serving',
-        bannerImage: '/src/assets/images/events/servings/red/serv-red-5.jpg',
+        bannerImage: '/src/assets/images/events/servings/red/serv-red-3.jpg',
         bannerBottomMedia: '/src/assets/images/events/servings/red/serv-red-banner-bottom.mp4',
         bannerBottomImage: '/src/assets/images/events/servings/red/serv-red-3.jpg',
         images: [
