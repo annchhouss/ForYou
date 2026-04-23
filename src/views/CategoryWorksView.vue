@@ -116,10 +116,10 @@ onMounted(() => {
             >
                 <div class="works-slider__wrapper">
                     <button class="works-slider__btn works-slider__btn--prev">
-                        <img src="/src/assets/images/slider-left.png" alt="Назад" />
+                        <img src="/images/slider-left.png" alt="Назад" />
                     </button>
                     <button class="works-slider__btn works-slider__btn--next">
-                        <img src="/src/assets/images/slider-right.png" alt="Вперёд" />
+                        <img src="/images/slider-right.png" alt="Вперёд" />
                     </button>
                     <swiper
                         v-bind="mainSwiperOptions"
@@ -158,14 +158,14 @@ onMounted(() => {
                                         @click.stop="slidePrev(work.id, $event)"
                                         aria-label="Предыдущее изображение"
                                     >
-                                        <img src="/src/assets/images/arrow-left.svg" alt="Arrow">
+                                        <img src="/images/arrow-left.svg" alt="Arrow">
                                     </button>
                                     <button
                                         :class="`work-card__nav-btn work-card__nav-btn--next next-${work.id}`"
                                         @click.stop="slideNext(work.id, $event)"
                                         aria-label="Следующее изображение"
                                     >
-                                        <img src="/src/assets/images/arrow-right.svg" alt="Arrow">
+                                        <img src="/images/arrow-right.svg" alt="Arrow">
                                     </button>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@ onMounted(() => {
                 :style="{ backgroundImage: `url(${categoryDetails.bannerImage})` }">
                 <div class="category-contact-banner__overlay">
                     <div class="category-contact-banner__content">
-                        <img src="/src/assets/images/logo/main-logo-small.png" alt="logo"
+                        <img src="/images/logo/main-logo-small.png" alt="logo"
                             class="category-contact-banner__logo">
                         <h2 class="category-contact-banner__title">Позвольте нам воплотить ваши идеи в атмосфере.</h2>
                         <p class="category-contact-banner__description">Мы гарантируем безупречный результат — и в

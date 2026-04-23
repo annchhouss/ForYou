@@ -98,7 +98,7 @@ const scrollToCategories = () => {
             <section class="works-contact-banner">
                 <div class="works-contact-banner__overlay">
                     <div class="works-contact-banner__content">
-                        <img src="/src/assets/images/logo/main-logo-small.png" alt="logo"
+                        <img src="/images/logo/main-logo-small.png" alt="logo"
                             class="works-contact-banner__logo">
                         <h2 class="works-contact-banner__title">{{ worksBannerBottom.title }}</h2>
                         <p class="works-contact-banner__description">{{ worksBannerBottom.description }}</p>

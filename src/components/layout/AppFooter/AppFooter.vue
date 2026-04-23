@@ -14,7 +14,7 @@ const isHomePage = computed(() => route.path === '/')
             <div class="app-footer__top">
                 <div class="app-footer__logo">
                     <RouterLink to="/">
-                        <img src="/src/assets/images/logo/main-logo.png" alt="Logo">
+                        <img src="/images/logo/main-logo.png" alt="Logo">
                     </RouterLink>
                 </div>
                 <nav class="app-footer__nav">
@@ -40,21 +40,21 @@ const isHomePage = computed(() => route.path === '/')
                     :class="{ 'app-footer__contact-info--right': !isHomePage }"
                 >
                     <div class="app-footer__contact-item">
-                        <img src="/src/assets/images/footer-links/email.svg" alt="Email"
+                        <img src="/images/footer-links/email.svg" alt="Email"
                             class="app-footer__contact-icon">
                         <a :href="`mailto:${footerData.email}`" class="app-footer__contact-link">
                             {{ footerData.email }}
                         </a>
                     </div>
                     <div class="app-footer__contact-item">
-                        <img src="/src/assets/images/footer-links/phone.svg" alt="Телефон"
+                        <img src="/images/footer-links/phone.svg" alt="Телефон"
                             class="app-footer__contact-icon">
                         <a :href="`tel:${footerData.phone}`" class="app-footer__contact-link">
                             {{ footerData.phone }}
                         </a>
                     </div>
                     <div class="app-footer__contact-item">
-                        <img src="/src/assets/images/footer-links/location.svg" alt="Местоположение"
+                        <img src="/images/footer-links/location.svg" alt="Местоположение"
                             class="app-footer__contact-icon">
                         <span class="app-footer__contact-link">
                             {{ footerData.location }}

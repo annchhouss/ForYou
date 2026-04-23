@@ -50,7 +50,7 @@ const handleMenuClick = (link) => {
                 <div class="app-header__logo">
                     <slot name="logo">
                         <RouterLink to="/" @click="closeMobileMenu">
-                            <img src="/src/assets/images/logo/main-logo.png" alt="Logo">
+                            <img src="/images/logo/main-logo.png" alt="Logo">
                         </RouterLink>
                     </slot>
                 </div>

@@ -30,7 +30,7 @@ const handleContact = () => {
                         <p class="agency-description">{{ aboutAgency.description }}</p>
                     </div>
                     <div class="agency-image">
-                        <img src="/src/assets/images/banner/about-banner-agency.png" alt="Агентство Для тебя" />
+                        <img src="/images/banner/about-banner-agency.png" alt="Агентство Для тебя" />
                     </div>
                 </div>
             </section>

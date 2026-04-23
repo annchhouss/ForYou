@@ -108,14 +108,14 @@ onMounted(() => {
             <section class="event-contact-banner">
                 <div class="event-contact-banner__media">
                     <img 
-                        :src="work.bannerBottomImage || '/src/assets/images/default-banner.jpg'" 
+                        :src="work.bannerBottomImage || '/images/default-banner.jpg'" 
                         alt="Фон мероприятия" 
                         class="event-contact-banner__image" 
                     />
                 </div>
                 <div class="event-contact-banner__overlay">
                     <div class="event-contact-banner__content">
-                        <img src="/src/assets/images/logo/main-logo-small.png" alt="logo"
+                        <img src="/images/logo/main-logo-small.png" alt="logo"
                             class="event-contact-banner__logo">
                         <h2 class="event-contact-banner__title">Позвольте нам воплотить ваши идеи в атмосфере.</h2>
                         <p class="event-contact-banner__description">

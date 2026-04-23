@@ -24,19 +24,19 @@ const showContactModal = ref(false)
             </section>
             <section class="contact-item">
                 <div class="contact-item-link">
-                    <img src="/src/assets/images/footer-links/email.svg" alt="Email" class="contact-item-link__icon">
+                    <img src="/images/footer-links/email.svg" alt="Email" class="contact-item-link__icon">
                     <a :href="`mailto:${footerData.email}`" class="contact-item-link__text">
                         studiya_dlyatebya@mail.ru
                     </a>
                 </div>
                 <div class="contact-item-link">
-                    <img src="/src/assets/images/footer-links/phone.svg" alt="Телефон" class="contact-item-link__icon">
+                    <img src="/images/footer-links/phone.svg" alt="Телефон" class="contact-item-link__icon">
                     <a :href="`tel:${footerData.phone}`" class="contact-item-link__text">
                         +7(928)279-78-72
                     </a>
                 </div>
                 <div class="contact-item-link">
-                    <img src="/src/assets/images/footer-links/location.svg" alt="Местоположение"
+                    <img src="/images/footer-links/location.svg" alt="Местоположение"
                         class="contact-item-link__icon">
                     <span class="contact-item-link__text">
                         Ростов-на-Дону

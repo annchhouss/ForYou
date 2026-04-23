@@ -145,7 +145,7 @@ const toggleFaq = (index) => {
             <section class="contact-banner">
                 <div class="contact-banner__overlay">
                     <div class="contact-banner__content">
-                        <img src="/src/assets/images/logo/main-logo-small.png" alt="logo" class="contact-banner__logo">
+                        <img src="/images/logo/main-logo-small.png" alt="logo" class="contact-banner__logo">
                         <h2 class="contact-banner__title">{{ contactSection.title }}</h2>
                         <p class="contact-banner__description">{{ contactSection.description }}</p>
                         <AppButton

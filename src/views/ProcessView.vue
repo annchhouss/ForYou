@@ -52,7 +52,7 @@ const handleContact = () => {
             <section class="process-contact-banner">
                 <div class="process-contact-banner__overlay">
                     <div class="process-contact-banner__content">
-                        <img src="/src/assets/images/logo/main-logo-small.png" alt="logo"
+                        <img src="/images/logo/main-logo-small.png" alt="logo"
                             class="process-contact-banner__logo">
                         <h2 class="process-contact-banner__title">{{ contactSection.title }}</h2>
                         <p class="process-contact-banner__description">{{ contactSection.description }}</p>

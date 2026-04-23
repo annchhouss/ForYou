@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # If your site is in a subfolder, set it here, e.g. /public_html/
+  RewriteBase /
+
+  # Don't rewrite existing files or directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Let backend routes work normally (if you have /api and /admin on the same domain)
+  RewriteRule ^(api|admin)(/.*)?$ - [L]
+
+  # SPA fallback (Vue Router history mode)
+  RewriteRule . /index.html [L]
+</IfModule>
+
