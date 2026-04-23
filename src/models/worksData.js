@@ -76,12 +76,12 @@ export const categoryDetails = {
         title: 'Корпоративы',
         description: 'Примеры наших корпоративных работ.',
         gallery: [
-            '/images/events/corporate/ecos/ecos-6.JPG',
+            '/images/events/corporate/ecos/ecos-6.jpg',
             '/images/events/corporate/circus/circus-5.jpg',
-            '/images/events/corporate/nais/nais-3.JPG',
-            '/images/events/corporate/ecos/ecos-1.JPG',
+            '/images/events/corporate/nais/nais-3.jpg',
+            '/images/events/corporate/ecos/ecos-1.jpg',
             '/images/events/corporate/circus/circus-1.jpg',
-            '/images/events/corporate/nais/nais-5.JPG'
+            '/images/events/corporate/nais/nais-5.jpg'
         ],
         categoryIntro: {
             title: 'Наш подход',
@@ -94,12 +94,12 @@ export const categoryDetails = {
         title: 'Дни рождения',
         description: 'Примеры наших работ на дни рождения.',
         gallery: [
-            '/images/events/birthdays/circus/circ-6.JPG',
-            '/images/events/birthdays/debut/debut-3.JPG',
-            '/images/events/birthdays/bulgakov/strashno-krasivo-1.JPG',
-            '/images/events/birthdays/circus/circ-2.JPG',
-            '/images/events/birthdays/debut/debut-1.JPG',
-            '/images/events/birthdays/bulgakov/strashno-krasivo-3.JPG'
+            '/images/events/birthdays/circus/circ-6.jpg',
+            '/images/events/birthdays/debut/debut-3.jpg',
+            '/images/events/birthdays/bulgakov/strashno-krasivo-1.jpg',
+            '/images/events/birthdays/circus/circ-2.jpg',
+            '/images/events/birthdays/debut/debut-1.jpg',
+            '/images/events/birthdays/bulgakov/strashno-krasivo-3.jpg'
         ],
         categoryIntro: {
             title: 'Наш подход',
@@ -114,8 +114,8 @@ export const categoryDetails = {
         gallery: [
             '/images/events/servings/orange/serv-orange-3.jpg',
             '/images/events/servings/green/serv-green-1.jpg',
-            '/images/events/servings/red/serv-red-5.JPG',
-            '/images/events/servings/gently/serv-gently-1.JPG',
+            '/images/events/servings/red/serv-red-5.jpg',
+            '/images/events/servings/gently/serv-gently-1.jpg',
             '/images/events/servings/orange/serv-orange-1.jpg',
             '/images/events/servings/green/serv-green-3.jpg'
         ],
@@ -175,19 +175,19 @@ export const works = [
         shortDescription: 'Не перестаем говорить о том, что наши молодые - наше вдохновение.',
         category: 'weddings',
         slug: 'vladislav&natali',
-        bannerImage: '/images/events/weddings/natali/natali-5.JPG',
+        bannerImage: '/images/events/weddings/natali/natali-5.jpg',
         bannerBottomMedia: '/images/events/weddings/natali/natali-banner-vid.mp4',
-        bannerBottomImage: '/images/events/weddings/natali/natali-8.JPG',
+        bannerBottomImage: '/images/events/weddings/natali/natali-8.jpg',
         images: [
-            '/images/events/weddings/natali/natali-1.JPG',
-            '/images/events/weddings/natali/natali-2.JPG',
-            '/images/events/weddings/natali/natali-3.JPG',
-            '/images/events/weddings/natali/natali-4.JPG',
-            '/images/events/weddings/natali/natali-5.JPG',
-            '/images/events/weddings/natali/natali-6.JPG',
-            '/images/events/weddings/natali/natali-7.JPG',
-            '/images/events/weddings/natali/natali-8.JPG',
-            '/images/events/weddings/natali/natali-9.JPG'
+            '/images/events/weddings/natali/natali-1.jpg',
+            '/images/events/weddings/natali/natali-2.jpg',
+            '/images/events/weddings/natali/natali-3.jpg',
+            '/images/events/weddings/natali/natali-4.jpg',
+            '/images/events/weddings/natali/natali-5.jpg',
+            '/images/events/weddings/natali/natali-6.jpg',
+            '/images/events/weddings/natali/natali-7.jpg',
+            '/images/events/weddings/natali/natali-8.jpg',
+            '/images/events/weddings/natali/natali-9.jpg'
         ],
         fullDescription: 'Владислав и Наталья с особым трепетом выбирали все детали. Они хотели, чтобы их гости получили истинное наслаждение от праздника. В подарок для них подготовили брендированные зеркала с именем каждого',
     },
