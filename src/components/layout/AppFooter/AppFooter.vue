@@ -14,7 +14,7 @@ const isHomePage = computed(() => route.path === '/')
             <div class="app-footer__top">
                 <div class="app-footer__logo">
                     <RouterLink to="/">
-                        <img src="/images/logo/main-logo.png" alt="Logo">
+                        <img src="/images/logo/main-logo.webp" alt="Logo">
                     </RouterLink>
                 </div>
                 <nav class="app-footer__nav">

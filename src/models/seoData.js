@@ -4,56 +4,56 @@ export const seoData = {
     '/': {
         title: 'Для Тебя — Студия декора мероприятий | Главная',
         description: 'Организация и декор мероприятий под ключ. Свадьбы, дни рождения, корпоративы. Создаём атмосферу, которую запомнят.',
-        image: '/og-home.jpg',
+        image: '/og-home.webp',
         type: 'website'
     },
     
     '/works': {
         title: 'Наши работы — Для Тебя | Портфолио мероприятий',
         description: 'Посмотрите наши реализованные проекты. Декор свадеб, дней рождений, корпоративных мероприятий.',
-        image: '/og-works.jpg',
+        image: '/og-works.webp',
         type: 'website'
     },
     
     '/about': {
         title: 'О нас — Для Тебя | Студия декора мероприятий',
         description: 'Узнайте больше о нашей команде и подходе к организации мероприятий. Опыт, портфолио, философия.',
-        image: '/og-about.jpg',
+        image: '/og-about.webp',
         type: 'website'
     },
     
     '/process': {
         title: 'Как мы работаем — Для Тебя | Процесс организации',
         description: 'Узнайте о нашем подходе к организации мероприятий. От первой встречи до реализации проекта.',
-        image: '/og-process.jpg',
+        image: '/og-process.webp',
         type: 'website'
     },
     
     '/contacts': {
         title: 'Контакты — Для Тебя | Связаться с нами',
         description: 'Свяжитесь с нами для обсуждения вашего мероприятия. Телефон, email, форма обратной связи.',
-        image: '/og-contacts.jpg',
+        image: '/og-contacts.webp',
         type: 'website'
     },
 
     'category-template': {
         title: 'Категория работ — Для Тебя | Декор мероприятий',
         description: 'Посмотрите работы по категории. Профессиональный декор и организация мероприятий.',
-        image: '/og-category.jpg',
+        image: '/og-category.webp',
         type: 'website'
     },
     
     'work-template': {
         title: 'Работа — Для Тебя | Пример мероприятия',
         description: 'Пример реализованного мероприятия. Декор, организация, атмосфера.',
-        image: '/og-work.jpg',
+        image: '/og-work.webp',
         type: 'article'
     },
     
     default: {
         title: 'Для Тебя — Студия декора мероприятий',
         description: 'Организация и декор мероприятий под ключ. Свадьбы, дни рождения, корпоративы.',
-        image: '/og-default.jpg',
+        image: '/og-default.webp',
         type: 'website'
     }
 }
