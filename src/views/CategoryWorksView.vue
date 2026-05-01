@@ -116,10 +116,10 @@ onMounted(() => {
             >
                 <div class="works-slider__wrapper">
                     <button class="works-slider__btn works-slider__btn--prev">
-                        <img src="/images/slider-left.png" alt="Назад" />
+                        <img src="/images/slider-left.webp" alt="Назад" />
                     </button>
                     <button class="works-slider__btn works-slider__btn--next">
-                        <img src="/images/slider-right.png" alt="Вперёд" />
+                        <img src="/images/slider-right.webp" alt="Вперёд" />
                     </button>
                     <swiper
                         v-bind="mainSwiperOptions"
@@ -186,7 +186,7 @@ onMounted(() => {
                 :style="{ backgroundImage: `url(${categoryDetails.bannerImage})` }">
                 <div class="category-contact-banner__overlay">
                     <div class="category-contact-banner__content">
-                        <img src="/images/logo/main-logo-small.png" alt="logo"
+                        <img src="/images/logo/main-logo-small.webp" alt="logo"
                             class="category-contact-banner__logo">
                         <h2 class="category-contact-banner__title">Позвольте нам воплотить ваши идеи в атмосфере.</h2>
                         <p class="category-contact-banner__description">Мы гарантируем безупречный результат — и в

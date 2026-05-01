@@ -506,6 +506,7 @@
         width: 100%;
         height: 487px;
         cursor: pointer;
+        isolation: isolate;
 
         @media (max-width: 1024px) {
             height: 400px;
@@ -529,6 +530,10 @@
             background: rgba(0, 0, 0, 0.4);
             z-index: 2;
             pointer-events: none;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
 
         &__gallery {
@@ -567,6 +572,10 @@
             padding: 60px 30px;
             z-index: 3;
             pointer-events: none;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
 
             @media (max-width: 1024px) {
                 padding: 50px 24px;
@@ -611,6 +620,10 @@
             padding: 0 30px;
             z-index: 4;
             pointer-events: auto;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
 
             @media (max-width: 1024px) {
                 bottom: 50px;
