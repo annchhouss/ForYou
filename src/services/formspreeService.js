@@ -5,10 +5,7 @@ export async function sendToFormspree(data, type) {
 
     formData.append('Имя', data.name || '')
     formData.append('Телефон', data.phone || '')
-
-    if (type === 'contactModal') {
-        formData.append('Почта', data.email || '—')
-    }
+    formData.append('Почта', data.email || '—')
 
     if (type === 'contactForm') {
         formData.append('Тип мероприятия', Array.isArray(data.eventType) ? data.eventType.join(', ') : (data.eventType || ''))

@@ -28,6 +28,7 @@ describe('Формы — согласие на ПД (чекбокс обязат
 
         await wrapper.get('[placeholder="Введите Ваше имя*"]').setValue('Тест')
         await wrapper.get('[placeholder="+7 (XXX) XXX-XX-XX"]').setValue('+79991234567')
+        await wrapper.get('[placeholder="example@email.com"]').setValue('test@gmail.com')
 
         await wrapper.find('form').trigger('submit')
         await flushPromises()
@@ -53,9 +54,12 @@ describe('Формы — согласие на ПД (чекбокс обязат
         expect(root).toBeTruthy()
 
         const nameInput = root.querySelector('input[placeholder="Введите ваше имя"]')
+        const emailInput = root.querySelector('input[placeholder="example@email.com"]')
         const phoneInput = root.querySelector('input[placeholder="+7 (XXX) XXX-XX-XX"]')
         nameInput.value = 'Тест'
         nameInput.dispatchEvent(new InputEvent('input', {bubbles: true}))
+        emailInput.value = 'test@gmail.com'
+        emailInput.dispatchEvent(new InputEvent('input', {bubbles: true}))
         phoneInput.value = '+79991234567'
         phoneInput.dispatchEvent(new InputEvent('input', {bubbles: true}))
         await nextTick()

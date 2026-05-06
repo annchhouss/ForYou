@@ -5,6 +5,7 @@ import AppButton from '@/components/ui/AppButton/AppButton.vue'
 
 import {eventTypes} from '@models/homeData'
 import {sendToFormspree} from '@/services/formspreeService'
+import {formatRuPhone, validateEmailCommonDomains, validateRuPhone} from '@/utils/contactFormValidation'
 
 const props = defineProps({
     initialBudget: {
@@ -17,6 +18,7 @@ const emit = defineEmits(['submit'])
 
 const form = ref({
     name: '',
+    email: '',
     phone: '',
     eventType: [],
     budget: props.initialBudget,
@@ -55,8 +57,30 @@ const submitError = ref('')
 const submitSuccess = ref(false)
 
 const agreementError = ref('')
+const fieldErrors = ref({
+    phone: '',
+    email: ''
+})
+
+function onPhoneInput(e) {
+    const next = formatRuPhone(e?.target?.value ?? form.value.phone)
+    form.value.phone = next
+    fieldErrors.value.phone = ''
+}
+
+function onPhoneFocus() {
+    if (!form.value.phone) form.value.phone = '+7'
+}
+
+function onEmailInput() {
+    fieldErrors.value.email = ''
+}
 
 const handleSubmit = async () => {
+    fieldErrors.value.phone = validateRuPhone(form.value.phone)
+    fieldErrors.value.email = validateEmailCommonDomains(form.value.email)
+    if (fieldErrors.value.phone || fieldErrors.value.email) return
+
     if (form.value.agreement !== true) {
         agreementError.value =
             'Необходимо согласие на обработку персональных данных. Поле обязательно для заполнения.'
@@ -89,12 +113,14 @@ const handleSubmit = async () => {
             submitSuccess.value = true
             form.value = {
                 name: '',
+                email: '',
                 phone: '',
                 eventType: [],
                 budget: props.initialBudget,
                 message: '',
                 agreement: false
             }
+            fieldErrors.value = { phone: '', email: '' }
             emit('submit', { success: true })
         } else {
             submitError.value = backendResult.message || 'Ошибка при отправке'
@@ -137,9 +163,32 @@ const handleSubmit = async () => {
                                 class="form-input"
                                 placeholder="+7 (XXX) XXX-XX-XX"
                                 required
+                                inputmode="tel"
+                                @focus="onPhoneFocus"
+                                @input="onPhoneInput"
                             />
                             <div class="form-input-line"></div>
                         </div>
+                        <div v-if="fieldErrors.phone" class="field-error">
+                            {{ fieldErrors.phone }}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Почта</label>
+                    <div class="form-input-wrapper">
+                        <input
+                            v-model="form.email"
+                            type="email"
+                            class="form-input"
+                            placeholder="example@email.com"
+                            required
+                            @input="onEmailInput"
+                        />
+                        <div class="form-input-line"></div>
+                    </div>
+                    <div v-if="fieldErrors.email" class="field-error">
+                        {{ fieldErrors.email }}
                     </div>
                 </div>
                 <div class="form-group">
